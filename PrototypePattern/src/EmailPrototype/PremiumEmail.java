@@ -6,9 +6,9 @@ public class PremiumEmail extends Email {
         super(subject, to, cc, content);
         this.bcc = bcc;
     }
-    private PremiumEmail(PremiumEmail e){
-        super(e);
-        this.bcc = e.bcc;
+    private PremiumEmail(PremiumEmail premiumEmail){
+        super(premiumEmail);
+        this.bcc = premiumEmail.bcc;
     }
 
     public String getBcc() {
